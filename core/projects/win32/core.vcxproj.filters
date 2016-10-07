@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="source\math">
+      <UniqueIdentifier>{e16a0cc1-7c25-4b6b-b5cf-dd14459fa2e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\porting">
+      <UniqueIdentifier>{e4654143-e996-493a-b325-b0edb22dd3c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\porting\inc">
+      <UniqueIdentifier>{be00064f-69ee-4c62-b7ad-28b1d87e03a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\shader">
+      <UniqueIdentifier>{cbec0aa8-b0b7-4d53-9d6e-f1e9e997a53d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\sprite">
+      <UniqueIdentifier>{034b3095-da45-4d81-b1ae-954775290fdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\texture">
+      <UniqueIdentifier>{67b52420-e579-40ff-bb72-bdc65f98bd4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\utils">
+      <UniqueIdentifier>{9d92a8f8-17d0-43b8-8734-6429976c4790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\scripting">
+      <UniqueIdentifier>{e9a913ad-637b-4b84-8ca0-8f041dfe031d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\scripting\lua">
+      <UniqueIdentifier>{fd403560-9476-446c-afb2-db78f8f76721}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\scripting\binding">
+      <UniqueIdentifier>{7d39770e-0961-43ab-aee8-5d8823984f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\scripting\cjson">
+      <UniqueIdentifier>{bc9198e8-32ac-4938-af15-8b5335ee4d19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\audio">
+      <UniqueIdentifier>{29e68e33-2db9-475e-b715-cff9d1612624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\audio\libogg">
+      <UniqueIdentifier>{b0df779c-cb45-4c67-8897-ab59120b2100}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\audio\libvorbis">
+      <UniqueIdentifier>{214dc5cb-b08f-430f-95ec-b4a98337a1b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\audio\libvorbis\vorbis">
+      <UniqueIdentifier>{a96f8590-e3d3-4776-9eed-4dc7122e18d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\audio\libvorbis\lib">
+      <UniqueIdentifier>{ed4d9b74-2bc3-4976-a5df-e4701664e1c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\audio\libvorbis\lib\books">
+      <UniqueIdentifier>{ecf72150-fe87-4e71-a0c3-62864f5dbc02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\audio\libvorbis\lib\modes">
+      <UniqueIdentifier>{9f93489f-9119-4ae4-b8ce-321455d08ede}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\crypto">
+      <UniqueIdentifier>{450f881a-12e2-4cb2-a1fe-43cb73fa48c1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\math\RDkmMath.c">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\math\RDMath.c">
+      <Filter>source\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\porting\win32\RDPortingPrint.cpp">
+      <Filter>source\porting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\porting\win32\RDPortingSystem.cpp">
+      <Filter>source\porting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shader\RDIndexBuffer.cpp">
+      <Filter>source\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shader\RDProgram.cpp">
+      <Filter>source\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shader\RDProgramCache.cpp">
+      <Filter>source\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sprite\RDSprite.cpp">
+      <Filter>source\sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\texture\RDTexture.cpp">
+      <Filter>source\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\texture\RDTexturePng.cpp">
+      <Filter>source\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utils\RDData.cpp">
+      <Filter>source\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utils\RDFileSystem.cpp">
+      <Filter>source\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utils\RDLog.cpp">
+      <Filter>source\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Rapid2D.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RDConfig.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RDDirector.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RDResolution.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\porting\win32\RDPortingTime.cpp">
+      <Filter>source\porting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\porting\win32\RDPortingFile.cpp">
+      <Filter>source\porting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\porting\win32\RDPortingMainLoop.cpp">
+      <Filter>source\porting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\porting\win32\RDWin32Char.cpp">
+      <Filter>source\porting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lauxlib.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lbaselib.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lbitlib.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lcode.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lcorolib.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lctype.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\ldblib.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\ldebug.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\ldo.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\ldump.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lfunc.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lgc.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\linit.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\liolib.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\llex.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lmathlib.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lmem.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\loadlib.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lobject.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lopcodes.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\loslib.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lparser.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lstate.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lstring.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lstrlib.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\ltable.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\ltablib.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\ltm.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lundump.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lutf8lib.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lvm.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lzio.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\lua\lapi.c">
+      <Filter>source\scripting\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\binding\RDlsprite.cpp">
+      <Filter>source\scripting\binding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\binding\RDLua.cpp">
+      <Filter>source\scripting\binding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\cjson\fpconv.c">
+      <Filter>source\scripting\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\cjson\lua_cjson.c">
+      <Filter>source\scripting\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\cjson\strbuf.c">
+      <Filter>source\scripting\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\binding\RDllualoader.cpp">
+      <Filter>source\scripting\binding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\binding\RDlspriteframe.cpp">
+      <Filter>source\scripting\binding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\binding\RDltexture.cpp">
+      <Filter>source\scripting\binding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\binding\RDlfilesystem.cpp">
+      <Filter>source\scripting\binding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\porting\win32\RDPortingTTF.cpp">
+      <Filter>source\porting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\binding\RDldrawvertex.cpp">
+      <Filter>source\scripting\binding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\binding\RDlMat4.cpp">
+      <Filter>source\scripting\binding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sprite\RDDrawVertex.cpp">
+      <Filter>source\sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\binding\RDlOpenGL.cpp">
+      <Filter>source\scripting\binding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\binding\RDlaudio.cpp">
+      <Filter>source\scripting\binding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\RDAudio.cpp">
+      <Filter>source\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\RDAudioOgg.cpp">
+      <Filter>source\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libogg\src\bitwise.c">
+      <Filter>source\audio\libogg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libogg\src\framing.c">
+      <Filter>source\audio\libogg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\psy.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\registry.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\res0.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\sharedbook.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\smallft.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\synthesis.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\tone.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\vorbisenc.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\vorbisfile.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\window.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\analysis.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\barkmel.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\bitrate.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\block.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\codebook.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\envelope.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\floor0.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\floor1.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\info.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\lookup.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\lpc.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\lsp.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\mapping0.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\audio\libvorbis\lib\mdct.c">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\crypto\base64.c">
+      <Filter>source\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\crypto\md5.c">
+      <Filter>source\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\crypto\xxtea.c">
+      <Filter>source\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scripting\binding\RDlcrypto.cpp">
+      <Filter>source\scripting\binding</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\math\RDkmMath.h">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\math\RDMath.h">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\math\RDTypes.h">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shader\RDIndexBuffer.h">
+      <Filter>source\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shader\RDProgram.h">
+      <Filter>source\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shader\RDProgramCache.h">
+      <Filter>source\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shader\RDShaderDefault.h">
+      <Filter>source\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sprite\RDSprite.h">
+      <Filter>source\sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\texture\RDTexture.h">
+      <Filter>source\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utils\RDData.h">
+      <Filter>source\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utils\RDFileSystem.h">
+      <Filter>source\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utils\RDLog.h">
+      <Filter>source\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utils\RDMacros.h">
+      <Filter>source\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Rapid2D.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RDConfig.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RDDirector.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\RDResolution.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\porting\inc\RDPortingFile.h">
+      <Filter>source\porting\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\porting\inc\RDPortingGL.h">
+      <Filter>source\porting\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\porting\inc\RDPortingMainLoop.h">
+      <Filter>source\porting\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\porting\inc\RDPortingPrint.h">
+      <Filter>source\porting\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\porting\inc\RDPortingSystem.h">
+      <Filter>source\porting\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\porting\inc\RDPortingTypes.h">
+      <Filter>source\porting\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\porting\inc\RDPortingTime.h">
+      <Filter>source\porting\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\porting\win32\RDWin32Char.h">
+      <Filter>source\porting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\RDLuaconf.h">
+      <Filter>source\scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lapi.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lauxlib.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lcode.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lctype.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\ldebug.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\ldo.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lfunc.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lgc.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\llex.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\llimits.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lmem.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lobject.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lopcodes.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lparser.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lprefix.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lstate.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lstring.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\ltable.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\ltm.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lua.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lua.hpp">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\luaconf.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lualib.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lundump.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lvm.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\lua\lzio.h">
+      <Filter>source\scripting\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\binding\RDLua.h">
+      <Filter>source\scripting\binding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\cjson\fpconv.h">
+      <Filter>source\scripting\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scripting\cjson\strbuf.h">
+      <Filter>source\scripting\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\porting\inc\RDPortingTTF.h">
+      <Filter>source\porting\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sprite\RDDrawVertex.h">
+      <Filter>source\sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\porting\inc\RDPortingAudio.h">
+      <Filter>source\porting\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\RDAudio.h">
+      <Filter>source\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\RDAudioOgg.h">
+      <Filter>source\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libogg\ogg\ogg.h">
+      <Filter>source\audio\libogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libogg\ogg\os_types.h">
+      <Filter>source\audio\libogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\vorbis\codec.h">
+      <Filter>source\audio\libvorbis\vorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\vorbis\vorbisenc.h">
+      <Filter>source\audio\libvorbis\vorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\vorbis\vorbisfile.h">
+      <Filter>source\audio\libvorbis\vorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\os.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\psy.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\registry.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\scales.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\smallft.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\window.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\backends.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\bitrate.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\codebook.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\codec_internal.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\envelope.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\highlevel.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\lookup.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\lookup_data.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\lpc.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\lsp.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\masking.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\mdct.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\misc.h">
+      <Filter>source\audio\libvorbis\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\books\coupled\res_books_51.h">
+      <Filter>source\audio\libvorbis\lib\books</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\books\coupled\res_books_stereo.h">
+      <Filter>source\audio\libvorbis\lib\books</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\books\floor\floor_books.h">
+      <Filter>source\audio\libvorbis\lib\books</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\books\uncoupled\res_books_uncoupled.h">
+      <Filter>source\audio\libvorbis\lib\books</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\floor_all.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\psych_11.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\psych_16.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\psych_44.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\psych_8.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\residue_16.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\residue_44.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\residue_44p51.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\residue_44u.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\residue_8.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_11.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_16.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_22.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_32.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_44.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_44p51.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_44u.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_8.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_X.h">
+      <Filter>source\audio\libvorbis\lib\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\crypto\base64.h">
+      <Filter>source\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\crypto\md5.h">
+      <Filter>source\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\crypto\xxtea.h">
+      <Filter>source\crypto</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,60 @@
+{"frames": [
+
+{
+	"filename": "pig_1.png",
+	"frame": {"x":278,"y":2,"w":48,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":0,"w":48,"h":54},
+	"sourceSize": {"w":62,"h":54}
+},
+{
+	"filename": "pig_2.png",
+	"frame": {"x":122,"y":2,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":62,"h":54}
+},
+{
+	"filename": "pig_3.png",
+	"frame": {"x":66,"y":2,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":62,"h":54}
+},
+{
+	"filename": "pig_4.png",
+	"frame": {"x":228,"y":2,"w":48,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":0,"w":48,"h":54},
+	"sourceSize": {"w":62,"h":54}
+},
+{
+	"filename": "pig_5.png",
+	"frame": {"x":178,"y":2,"w":48,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":0,"w":48,"h":54},
+	"sourceSize": {"w":62,"h":54}
+},
+{
+	"filename": "pig_6.png",
+	"frame": {"x":2,"y":2,"w":62,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":62,"h":54},
+	"sourceSize": {"w":62,"h":54}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "pig.png",
+	"format": "RGBA8888",
+	"size": {"w":328,"h":58},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:9241ee198b56c2e38fdd79ca3303b147:c2ddba175d104f5266fd7e8777d38ec5:4dd13c7db2d2fc02b6406b8a7f7d5ecc$"
+}
+}

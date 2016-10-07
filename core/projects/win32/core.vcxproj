@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8088D57F-7396-4437-9925-3F5F74E6D0DD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>core</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;RD_DEBUG;_CRT_SECURE_NO_WARNINGS;RD_PLATFORM_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\thirdParty\glew\inc;..\..\;..\..\math;..\..\porting\inc;..\..\shader;..\..\sprite;..\..\texture;..\..\utils;..\..\..\thirdParty\png\inc;..\..\scripting\lua;..\..\scripting\binding;..\..\audio;..\..\audio\libogg;..\..\audio\libvorbis;..\..\..\thirdParty\OpenAL\inc;..\..\crypto</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;RD_PLATFORM_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\thirdParty\glew\inc;..\..\;..\..\math;..\..\porting\inc;..\..\shader;..\..\sprite;..\..\texture;..\..\utils;..\..\..\thirdParty\png\inc;..\..\scripting\lua;..\..\scripting\binding;..\..\audio;..\..\audio\libogg;..\..\audio\libvorbis;..\..\..\thirdParty\OpenAL\inc;..\..\crypto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\audio\libogg\src\bitwise.c" />
+    <ClCompile Include="..\..\audio\libogg\src\framing.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\analysis.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\barkmel.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\bitrate.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\block.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\codebook.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\envelope.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\floor0.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\floor1.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\info.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\lookup.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\lpc.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\lsp.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\mapping0.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\mdct.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\psy.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\registry.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\res0.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\sharedbook.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\smallft.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\synthesis.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\tone.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\vorbisenc.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\vorbisfile.c" />
+    <ClCompile Include="..\..\audio\libvorbis\lib\window.c" />
+    <ClCompile Include="..\..\audio\RDAudio.cpp" />
+    <ClCompile Include="..\..\audio\RDAudioOgg.cpp" />
+    <ClCompile Include="..\..\crypto\base64.c" />
+    <ClCompile Include="..\..\crypto\md5.c" />
+    <ClCompile Include="..\..\crypto\xxtea.c" />
+    <ClCompile Include="..\..\math\RDkmMath.c" />
+    <ClCompile Include="..\..\math\RDMath.c" />
+    <ClCompile Include="..\..\porting\win32\RDPortingPrint.cpp" />
+    <ClCompile Include="..\..\porting\win32\RDPortingSystem.cpp" />
+    <ClCompile Include="..\..\porting\win32\RDPortingTime.cpp" />
+    <ClCompile Include="..\..\porting\win32\RDPortingFile.cpp" />
+    <ClCompile Include="..\..\porting\win32\RDPortingMainLoop.cpp" />
+    <ClCompile Include="..\..\porting\win32\RDPortingTTF.cpp" />
+    <ClCompile Include="..\..\porting\win32\RDWin32Char.cpp" />
+    <ClCompile Include="..\..\Rapid2D.cpp" />
+    <ClCompile Include="..\..\RDConfig.cpp" />
+    <ClCompile Include="..\..\RDDirector.cpp" />
+    <ClCompile Include="..\..\RDResolution.cpp" />
+    <ClCompile Include="..\..\scripting\binding\RDlaudio.cpp" />
+    <ClCompile Include="..\..\scripting\binding\RDlcrypto.cpp" />
+    <ClCompile Include="..\..\scripting\binding\RDldrawvertex.cpp" />
+    <ClCompile Include="..\..\scripting\binding\RDlfilesystem.cpp" />
+    <ClCompile Include="..\..\scripting\binding\RDllualoader.cpp" />
+    <ClCompile Include="..\..\scripting\binding\RDlMat4.cpp" />
+    <ClCompile Include="..\..\scripting\binding\RDlOpenGL.cpp" />
+    <ClCompile Include="..\..\scripting\binding\RDlsprite.cpp" />
+    <ClCompile Include="..\..\scripting\binding\RDlspriteframe.cpp" />
+    <ClCompile Include="..\..\scripting\binding\RDltexture.cpp" />
+    <ClCompile Include="..\..\scripting\binding\RDLua.cpp" />
+    <ClCompile Include="..\..\scripting\cjson\fpconv.c" />
+    <ClCompile Include="..\..\scripting\cjson\lua_cjson.c" />
+    <ClCompile Include="..\..\scripting\cjson\strbuf.c" />
+    <ClCompile Include="..\..\scripting\lua\lapi.c" />
+    <ClCompile Include="..\..\scripting\lua\lauxlib.c" />
+    <ClCompile Include="..\..\scripting\lua\lbaselib.c" />
+    <ClCompile Include="..\..\scripting\lua\lbitlib.c" />
+    <ClCompile Include="..\..\scripting\lua\lcode.c" />
+    <ClCompile Include="..\..\scripting\lua\lcorolib.c" />
+    <ClCompile Include="..\..\scripting\lua\lctype.c" />
+    <ClCompile Include="..\..\scripting\lua\ldblib.c" />
+    <ClCompile Include="..\..\scripting\lua\ldebug.c" />
+    <ClCompile Include="..\..\scripting\lua\ldo.c" />
+    <ClCompile Include="..\..\scripting\lua\ldump.c" />
+    <ClCompile Include="..\..\scripting\lua\lfunc.c" />
+    <ClCompile Include="..\..\scripting\lua\lgc.c" />
+    <ClCompile Include="..\..\scripting\lua\linit.c" />
+    <ClCompile Include="..\..\scripting\lua\liolib.c" />
+    <ClCompile Include="..\..\scripting\lua\llex.c" />
+    <ClCompile Include="..\..\scripting\lua\lmathlib.c" />
+    <ClCompile Include="..\..\scripting\lua\lmem.c" />
+    <ClCompile Include="..\..\scripting\lua\loadlib.c" />
+    <ClCompile Include="..\..\scripting\lua\lobject.c" />
+    <ClCompile Include="..\..\scripting\lua\lopcodes.c" />
+    <ClCompile Include="..\..\scripting\lua\loslib.c" />
+    <ClCompile Include="..\..\scripting\lua\lparser.c" />
+    <ClCompile Include="..\..\scripting\lua\lstate.c" />
+    <ClCompile Include="..\..\scripting\lua\lstring.c" />
+    <ClCompile Include="..\..\scripting\lua\lstrlib.c" />
+    <ClCompile Include="..\..\scripting\lua\ltable.c" />
+    <ClCompile Include="..\..\scripting\lua\ltablib.c" />
+    <ClCompile Include="..\..\scripting\lua\ltm.c" />
+    <ClCompile Include="..\..\scripting\lua\lundump.c" />
+    <ClCompile Include="..\..\scripting\lua\lutf8lib.c" />
+    <ClCompile Include="..\..\scripting\lua\lvm.c" />
+    <ClCompile Include="..\..\scripting\lua\lzio.c" />
+    <ClCompile Include="..\..\shader\RDIndexBuffer.cpp" />
+    <ClCompile Include="..\..\shader\RDProgram.cpp" />
+    <ClCompile Include="..\..\shader\RDProgramCache.cpp" />
+    <ClCompile Include="..\..\sprite\RDDrawVertex.cpp" />
+    <ClCompile Include="..\..\sprite\RDSprite.cpp" />
+    <ClCompile Include="..\..\texture\RDTexture.cpp" />
+    <ClCompile Include="..\..\texture\RDTexturePng.cpp" />
+    <ClCompile Include="..\..\utils\RDData.cpp" />
+    <ClCompile Include="..\..\utils\RDFileSystem.cpp" />
+    <ClCompile Include="..\..\utils\RDLog.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\audio\libogg\ogg\ogg.h" />
+    <ClInclude Include="..\..\audio\libogg\ogg\os_types.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\backends.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\bitrate.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\books\coupled\res_books_51.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\books\coupled\res_books_stereo.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\books\floor\floor_books.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\books\uncoupled\res_books_uncoupled.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\codebook.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\codec_internal.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\envelope.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\highlevel.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\lookup.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\lookup_data.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\lpc.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\lsp.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\masking.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\mdct.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\misc.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\floor_all.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\psych_11.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\psych_16.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\psych_44.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\psych_8.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\residue_16.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\residue_44.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\residue_44p51.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\residue_44u.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\residue_8.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_11.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_16.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_22.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_32.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_44.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_44p51.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_44u.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_8.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\modes\setup_X.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\os.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\psy.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\registry.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\scales.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\smallft.h" />
+    <ClInclude Include="..\..\audio\libvorbis\lib\window.h" />
+    <ClInclude Include="..\..\audio\libvorbis\vorbis\codec.h" />
+    <ClInclude Include="..\..\audio\libvorbis\vorbis\vorbisenc.h" />
+    <ClInclude Include="..\..\audio\libvorbis\vorbis\vorbisfile.h" />
+    <ClInclude Include="..\..\audio\RDAudio.h" />
+    <ClInclude Include="..\..\audio\RDAudioOgg.h" />
+    <ClInclude Include="..\..\crypto\base64.h" />
+    <ClInclude Include="..\..\crypto\md5.h" />
+    <ClInclude Include="..\..\crypto\xxtea.h" />
+    <ClInclude Include="..\..\math\RDkmMath.h" />
+    <ClInclude Include="..\..\math\RDMath.h" />
+    <ClInclude Include="..\..\math\RDTypes.h" />
+    <ClInclude Include="..\..\porting\inc\RDPortingAudio.h" />
+    <ClInclude Include="..\..\porting\inc\RDPortingFile.h" />
+    <ClInclude Include="..\..\porting\inc\RDPortingGL.h" />
+    <ClInclude Include="..\..\porting\inc\RDPortingMainLoop.h" />
+    <ClInclude Include="..\..\porting\inc\RDPortingPrint.h" />
+    <ClInclude Include="..\..\porting\inc\RDPortingSystem.h" />
+    <ClInclude Include="..\..\porting\inc\RDPortingTime.h" />
+    <ClInclude Include="..\..\porting\inc\RDPortingTTF.h" />
+    <ClInclude Include="..\..\porting\inc\RDPortingTypes.h" />
+    <ClInclude Include="..\..\porting\win32\RDWin32Char.h" />
+    <ClInclude Include="..\..\Rapid2D.h" />
+    <ClInclude Include="..\..\RDConfig.h" />
+    <ClInclude Include="..\..\RDDirector.h" />
+    <ClInclude Include="..\..\RDResolution.h" />
+    <ClInclude Include="..\..\scripting\binding\RDLua.h" />
+    <ClInclude Include="..\..\scripting\cjson\fpconv.h" />
+    <ClInclude Include="..\..\scripting\cjson\strbuf.h" />
+    <ClInclude Include="..\..\scripting\lua\lapi.h" />
+    <ClInclude Include="..\..\scripting\lua\lauxlib.h" />
+    <ClInclude Include="..\..\scripting\lua\lcode.h" />
+    <ClInclude Include="..\..\scripting\lua\lctype.h" />
+    <ClInclude Include="..\..\scripting\lua\ldebug.h" />
+    <ClInclude Include="..\..\scripting\lua\ldo.h" />
+    <ClInclude Include="..\..\scripting\lua\lfunc.h" />
+    <ClInclude Include="..\..\scripting\lua\lgc.h" />
+    <ClInclude Include="..\..\scripting\lua\llex.h" />
+    <ClInclude Include="..\..\scripting\lua\llimits.h" />
+    <ClInclude Include="..\..\scripting\lua\lmem.h" />
+    <ClInclude Include="..\..\scripting\lua\lobject.h" />
+    <ClInclude Include="..\..\scripting\lua\lopcodes.h" />
+    <ClInclude Include="..\..\scripting\lua\lparser.h" />
+    <ClInclude Include="..\..\scripting\lua\lprefix.h" />
+    <ClInclude Include="..\..\scripting\lua\lstate.h" />
+    <ClInclude Include="..\..\scripting\lua\lstring.h" />
+    <ClInclude Include="..\..\scripting\lua\ltable.h" />
+    <ClInclude Include="..\..\scripting\lua\ltm.h" />
+    <ClInclude Include="..\..\scripting\lua\lua.h" />
+    <ClInclude Include="..\..\scripting\lua\lua.hpp" />
+    <ClInclude Include="..\..\scripting\lua\luaconf.h" />
+    <ClInclude Include="..\..\scripting\lua\lualib.h" />
+    <ClInclude Include="..\..\scripting\lua\lundump.h" />
+    <ClInclude Include="..\..\scripting\lua\lvm.h" />
+    <ClInclude Include="..\..\scripting\lua\lzio.h" />
+    <ClInclude Include="..\..\scripting\RDLuaconf.h" />
+    <ClInclude Include="..\..\shader\RDIndexBuffer.h" />
+    <ClInclude Include="..\..\shader\RDProgram.h" />
+    <ClInclude Include="..\..\shader\RDProgramCache.h" />
+    <ClInclude Include="..\..\shader\RDShaderDefault.h" />
+    <ClInclude Include="..\..\sprite\RDDrawVertex.h" />
+    <ClInclude Include="..\..\sprite\RDSprite.h" />
+    <ClInclude Include="..\..\texture\RDTexture.h" />
+    <ClInclude Include="..\..\utils\RDData.h" />
+    <ClInclude Include="..\..\utils\RDFileSystem.h" />
+    <ClInclude Include="..\..\utils\RDLog.h" />
+    <ClInclude Include="..\..\utils\RDMacros.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
